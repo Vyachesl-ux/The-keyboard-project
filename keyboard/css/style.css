@@ -1,0 +1,70 @@
+body{
+    font-family: 'courier';
+}
+input{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    font-size: 16px;
+    font-family: 'courier';
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+}
+
+.buttons__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-weight: 500;
+    box-shadow: 0 0 4px black, inset 0 0 4px 2px #ccc;
+
+}
+
+.buttons__content+.buttons__content{
+    margin-left: 15px;
+}
+
+.circle{
+    border: 1px solid white;
+    box-shadow:  0 0 0 , inset 0 0 10px 2px #ccc;
+    color: black;
+    border-radius: 50%;
+    padding: 10px 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.active {
+    box-shadow: 0 0 0, inset 0 0 4px 2px #ccc;
+    color: #ccc;
+}
+.active>.circle{
+    transform: scale(.9);
+}
+
+.func{
+    width: initial;
+}
+.func>.circle{
+    text-transform: lowercase;
+
+}
+.space{
+    width: 25%;
+}
+.space>.circle{
+    display: none;
+}
